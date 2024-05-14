@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'test';
+}
+@font-face{
+    font-family: 'test';
+    src: url(./fonts/Lora-Italic-VariableFont_wght.ttf)
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1188ffc5;
+    overflow: hidden;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+}
+input {
+    width: 50px;
+    height: 30px;
+    padding-left: 5px;
+    margin-left: 5px;
+    padding-bottom: 2px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;    
+    background-color: #f0f8ffbb;
+    text-align: center;
+}
+input[type = 'number'] {
+    font-variant-alternates: normal;
+}
+button {
+    padding: 10px 22px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #18f;
+    transition: all 0.5s ease;
+    margin-bottom: 20px;
+}
+button:hover {
+    transform: translateY(-5px);
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #18f;
+}
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    width: 6px;
+}
+div#affichage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    min-height: auto;
+    max-height: 500px;
+    overflow-y: scroll;
+} 
+div#affichage div {
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 6px;
+    background-color: white;
+    margin: 5px;
+    width: auto;
+    height: auto;
+}
+b {
+    margin-left: 5px;
+    color: red;
+    border: 1px solid red;
+    padding: 5px 25px;
+    border-radius: 6px;
+}
+p {
+    margin-bottom: 10px;
+}
+i {
+    color: #06d228;
+}
+span.ligne {
+    border-bottom: 1px solid black;
+}
+span.bas {
+    margin-left: 57px;
+}
+#croissant, #decroissant{
+    position: absolute;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#croissant {
+    bottom: 0;
+    left: 20px;
+}
+#decroissant{
+    bottom: 0;
+    right: 20px;
+}
+#croissant div, #decroissant div {
+    width: 100px;
+    height: 110px;
+    padding: 6px 0;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 6px;
+}
+#croissant #left, #decroissant #right {
+    margin-top: 10px;
+}
